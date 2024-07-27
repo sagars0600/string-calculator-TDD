@@ -13,3 +13,10 @@ test("should return the number for a single number", () => {
   console.log(`Test result for single number "1": ${result}`);
   expect(result).toBe(1);
 });
+
+//test 3
+test("should return the sum for two numbers", () => {
+  const result = add("1,2");
+  console.log(`Test result for two numbers "1,2": ${result}`);
+  expect(result).toBe(3);
+});
