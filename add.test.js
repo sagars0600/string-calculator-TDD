@@ -20,3 +20,10 @@ test("should return the sum for two numbers", () => {
   console.log(`Test result for two numbers "1,2": ${result}`);
   expect(result).toBe(3);
 });
+
+//test 4
+test("should return the sum for multiple numbers", () => {
+  const result = add("1,2,3");
+  console.log(`Test result for multiple numbers "1,2,3": ${result}`);
+  expect(result).toBe(6);
+});
