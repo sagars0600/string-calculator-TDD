@@ -67,3 +67,22 @@ test("should handle long delimiters", () => {
   );
   expect(result).toBe(6);
 });
+
+//test 10
+test("should handle multiple delimiters", () => {
+  const result = add("//[*][%]\n1*2%3");
+  console.log(
+    `Test result for multiple delimiters "//[*][%]\\n1*2%3": ${result}`
+  );
+  expect(result).toBe(6);
+});
+
+
+//test 11
+test("should handle multiple delimiters of different lengths", () => {
+  const result = add("//[***][%%]\n1***2%%3");
+  console.log(
+    `Test result for multiple delimiters of different lengths "//[***][%%]\\n1***2%%3": ${result}`
+  );
+  expect(result).toBe(6);
+});
