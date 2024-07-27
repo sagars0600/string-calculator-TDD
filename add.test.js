@@ -27,3 +27,10 @@ test("should return the sum for multiple numbers", () => {
   console.log(`Test result for multiple numbers "1,2,3": ${result}`);
   expect(result).toBe(6);
 });
+
+//test 5
+test("should handle new lines between numbers", () => {
+  const result = add("1\n2,3");
+  console.log(`Test result for new lines "1\n2,3": ${result}`);
+  expect(result).toBe(6);
+});
