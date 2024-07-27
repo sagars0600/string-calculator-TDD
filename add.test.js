@@ -58,3 +58,12 @@ test("should ignore numbers larger than 1000", () => {
   console.log(`Test result for ignoring large numbers "2,1001": ${result}`);
   expect(result).toBe(2);
 });
+
+//test 9
+test("should handle long delimiters", () => {
+  const result = add("//[***]\n1***2***3");
+  console.log(
+    `Test result for long delimiter "//[***]\\n1***2***3": ${result}`
+  );
+  expect(result).toBe(6);
+});
