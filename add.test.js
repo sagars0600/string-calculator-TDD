@@ -51,3 +51,10 @@ test("should throw an exception for negative numbers", () => {
     expect(e.message).toBe("Negative numbers not allowed: -2");
   }
 });
+
+//test 8
+test("should ignore numbers larger than 1000", () => {
+  const result = add("2,1001");
+  console.log(`Test result for ignoring large numbers "2,1001": ${result}`);
+  expect(result).toBe(2);
+});
